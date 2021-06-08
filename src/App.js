@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Image from "./components/Image/Image";
 import cat from "./assets/cat.png";
