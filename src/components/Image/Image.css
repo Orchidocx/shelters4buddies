@@ -1,0 +1,27 @@
+.image {
+  object-fit: cover;
+}
+
+.image__ellipse {
+  border-radius: 50%;
+}
+
+.image__sm {
+  width: 100px;
+  height: 100px;
+}
+
+.image__md {
+  width: 200px;
+  height: 200px;
+}
+
+.image__lg {
+  width: 300px;
+  height: 300px;
+}
+
+.image__xl {
+  width: 400px;
+  height: 400px;
+}
