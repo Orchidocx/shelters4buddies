@@ -1,25 +1,26 @@
+import React, { useState } from "react";
 import "./Image.css";
 
 type ImageProps = {
   src: string;
-  size?: string;
+  size?: Number;
   alt?: string;
-  shape?: string;
+  shape?: Number;
 };
 
-const ImageSize = {
-  xs: "xs",
-  sm: "sm",
-  md: "md",
-  lg: "lg",
-  xl: "xl",
-};
+enum ImageSize {
+  xs,
+  sm,
+  md,
+  lg,
+  xl,
+}
 
 // TODO: Add css support for additional shapes
-const ImageShape = {
-  default: "default",
-  ellipse: "ellipse",
-};
+enum ImageShape {
+  default,
+  ellipse,
+}
 
 function Image({
   src,
@@ -27,12 +28,21 @@ function Image({
   alt = "not provided",
   shape = ImageShape.default,
 }: ImageProps) {
-  return (
+  const [isValidImage, setIsValidImage] = useState(true);
+
+  return isValidImage ? (
     <img
-      className={`image image__${size} image__${shape}`}
+      className={`image image__size${size} image__shape${shape}`}
       src={src}
       alt={alt}
+      onError={() => {
+        setIsValidImage(false);
+      }}
     />
+  ) : (
+    <div
+      className={`nullImage nullImage__size${size} nullImage__shape${shape}`}
+    ></div>
   );
 }
 

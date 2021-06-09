@@ -2,26 +2,47 @@
   object-fit: cover;
 }
 
-.image__ellipse {
+.nullImage {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.nullImage__shape0,
+.image__shape0 {
+  border-radius: 4%;
+}
+
+.nullImage__shape1,
+.image__shape1 {
   border-radius: 50%;
 }
 
-.image__sm {
+.nullImage__size0,
+.image__size0 {
+  width: 50px;
+  height: 50px;
+}
+
+.nullImage__size1,
+.image__size1 {
   width: 100px;
   height: 100px;
 }
 
-.image__md {
+.nullImage__size2,
+.image__size2 {
   width: 200px;
   height: 200px;
 }
 
-.image__lg {
+.nullImage__size3,
+.image__size3 {
   width: 300px;
   height: 300px;
 }
 
-.image__xl {
+.nullImage__size4,
+.image__size4 {
   width: 400px;
   height: 400px;
 }
