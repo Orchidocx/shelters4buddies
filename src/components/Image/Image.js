@@ -1,5 +1,19 @@
 import "./Image.css";
-function Image({ src, size = "sm", alt = "not provided", shape = "default" }) {
+
+const ImageSize = {
+  Small: 'sm',
+  Medium: 'md',
+  Large: 'lg',
+  XLarge: 'xl'
+}
+
+// TODO: Add css support for additional shapes
+const ImageShape = {
+  Default: 'default',
+  Ellipse: 'ellipse',
+}
+
+function Image({ src, size = ImageSize.Small, alt = "not provided", shape = ImageShape.Default }) {
   return (
     <img
       className={`image image__${size} image__${shape}`}
@@ -9,4 +23,8 @@ function Image({ src, size = "sm", alt = "not provided", shape = "default" }) {
   );
 }
 
-export default Image;
+export {
+  ImageSize,
+  ImageShape,
+  Image
+}
