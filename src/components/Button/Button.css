@@ -1,0 +1,37 @@
+.button {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttonSize0 {
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.buttonSize1 {
+  width: 180px;
+  height: 50px;
+  font-size: 1.15rem;
+}
+
+.buttonSize2 {
+  width: 260px;
+  height: 70px;
+  font-size: 1.3rem;
+}
+
+.buttonSize3 {
+  width: 340px;
+  height: 90px;
+  font-size: 1.45rem;
+}
+
+.buttonSize4 {
+  width: 420px;
+  height: 110px;
+  font-size: 1.6rem;
+}
