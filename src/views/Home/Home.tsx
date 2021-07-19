@@ -1,5 +1,13 @@
 import "./Home.css";
-import { Image, ImageShape, ImageSize } from "../../components/Image/Image";
+import {
+  Img,
+  Image,
+  ImageShape,
+  ImageSize,
+  Button,
+  ButtonShape,
+  ButtonSize,
+} from "../../components";
 import cat from "../../assets/cat.png";
 function Home() {
   return (
@@ -11,12 +19,17 @@ function Home() {
         dolore aperiam maxime ducimus dolor vel quibusdam unde numquam nostrum
         voluptate?
       </p>
+      <Button name="hello" size={ButtonSize.xs} />
+      <Button name="hello" size={ButtonSize.sm} />
+      <Button name="hello" />
+      <Button name="hello" size={ButtonSize.lg} />
+      <Button name="hello" size={ButtonSize.xl} />
       <Image src={cat} size={ImageSize.xs} shape={ImageShape.ellipse} />
       <Image src={cat} size={ImageSize.sm} shape={ImageShape.ellipse} />
       <Image src={cat} size={ImageSize.md} shape={ImageShape.ellipse} />
       <Image src={cat} size={ImageSize.lg} shape={ImageShape.ellipse} />
       <br />
-      <Image src={cat} size={ImageSize.xs} />
+      <Img.Image src={cat} size={ImageSize.xs} />
       <Image src={cat} size={ImageSize.sm} />
       <Image src={cat} size={ImageSize.md} />
       <Image src={cat} size={ImageSize.lg} />
