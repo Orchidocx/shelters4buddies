@@ -1,5 +1,7 @@
 .button {
   background-color: aquamarine;
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,4 +36,12 @@
   width: 420px;
   height: 110px;
   font-size: 1.6rem;
+}
+
+.buttonShape0 {
+  border-radius: 4px;
+}
+
+.buttonShape1 {
+ border-radius: 16px;
 }
