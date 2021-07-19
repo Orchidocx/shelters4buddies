@@ -5,6 +5,7 @@ type ButtonProps = {
   name: string;
   size?: Number;
   shape?: Number;
+  onClick?: () => void;
 };
 
 enum ButtonSize {
@@ -24,8 +25,9 @@ const Button = ({
   name = "Button",
   size = ButtonSize.md,
   shape = ButtonShape.default,
+  onClick = () => {},
 }: ButtonProps) => (
-  <div className={`button buttonSize${size} buttonShape${shape}`}>{name}</div>
+  <button type="button" className={`button buttonSize${size} buttonShape${shape}`} onClick={onClick}>{name}</button>
 );
 
 export { Button, ButtonSize, ButtonShape };

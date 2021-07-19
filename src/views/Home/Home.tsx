@@ -24,6 +24,11 @@ function Home() {
       <Button name="hello" />
       <Button name="hello" size={ButtonSize.lg} />
       <Button name="hello" size={ButtonSize.xl} />
+      <Button name="hello" size={ButtonSize.xs} shape={ButtonShape.pill} />
+      <Button name="hello" size={ButtonSize.sm} shape={ButtonShape.pill}/>
+      <Button name="hello"shape={ButtonShape.pill} />
+      <Button name="hello" size={ButtonSize.lg} shape={ButtonShape.pill}/>
+      <Button name="hello" size={ButtonSize.xl} shape={ButtonShape.pill} />
       <Image src={cat} size={ImageSize.xs} shape={ImageShape.ellipse} />
       <Image src={cat} size={ImageSize.sm} shape={ImageShape.ellipse} />
       <Image src={cat} size={ImageSize.md} shape={ImageShape.ellipse} />
