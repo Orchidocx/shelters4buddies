@@ -1,5 +1,6 @@
 .button {
   background-color: var(--btn-primary);
+  color: var(--font-primary);
   border: none;
   cursor: pointer;
   display: flex;
@@ -9,32 +10,32 @@
 }
 
 .buttonSize0 {
-  width: 100px;
-  height: 30px;
+  width: var(--btn-unitWidth);
+  height: var(--btn-unitHeight);
   font-size: var(--fs-300);
 }
 
 .buttonSize1 {
-  width: 150px;
-  height: 40px;
+  width: calc(1.75 * var(--btn-unitWidth));
+  height: calc(1.2 * var(--btn-unitHeight));
   font-size: var(--fs-400);
 }
 
 .buttonSize2 {
-  width: 200px;
-  height: 50px;
+  width: calc(2.5 * var(--btn-unitWidth));
+  height: calc(1.4 * var(--btn-unitHeight));
   font-size: var(--fs-500);
 }
 
 .buttonSize3 {
-  width: 250px;
-  height: 60px;
+  width: calc(3.25 * var(--btn-unitWidth));
+  height: calc(1.6 * var(--btn-unitHeight));
   font-size: var(--fs-600);
 }
 
 .buttonSize4 {
-  width: 300px;
-  height: 70px;
+  width: calc(4 * var(--btn-unitWidth));
+  height: calc(1.8 * var(--btn-unitHeight));
   font-size: var(--fs-700);
 }
 
