@@ -8,12 +8,17 @@
   --fs-600: 1.875rem;
   --fs-700: 2rem;
 
+  /* font color */
+  --font-primary: #1a1a1a;
+
   /* btn solid schema (adjust colors as we progress)*/
-  --btn-primary: #4e8bfd;
+  --btn-primary: #508dff;
   --btn-secondary: #4e8bfd;
   --btn-neutral: #4e8bfd;
   --btn-active: #4e8bfd;
   --btn-disabled: #4e8bfd;
+  --btn-unitWidth: 100px;
+  --btn-unitHeight: 28px;
 }
 
 body {
